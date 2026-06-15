@@ -25,6 +25,13 @@ This section focuses on low-level image processing and multidimensional array ma
 * **Task 3: Mean Filter (`mean_filter.py`)**
   * Applying a spatial low-pass filter (convolution matrix) for image smoothing and noise reduction, including custom boundary handling for edge pixels.
 
+### 📁 [Lab 03](./Lab-03) - Graph Algorithms & Traveling Salesperson Problem (TSP)
+This section explores graph representations, shortest path lookups, and algorithmic approaches to NP-hard optimization problems.
+* **Graph Representation (`graph.py`)**: Core data structures used to model and navigate custom graph topologies.
+* **Exact TSP Solver (`tsp_exact.py`)**: An implementation of an exact, brute-force/backtracking algorithm designed to find the absolute optimal Hamiltonian cycle for the Traveling Salesperson Problem.
+* **Approximation TSP Solver (`tsp_approx.py`)**: A heuristic approach (such as Nearest Neighbor or local search) implementing an efficient approximation algorithm to solve TSP for larger datasets where exact computation becomes computationally intractable.
+* **Bidirectional Search (`bidirectional.py`)**: An optimized graph traversal algorithm executing simultaneous forward and backward searches to establish the shortest path between nodes with significantly reduced state-space exploration.
+
 ---
 
 ## Technical Highlights
@@ -32,5 +39,5 @@ This section focuses on low-level image processing and multidimensional array ma
 * **Core Focus**: 
   * Understanding the underlying mechanics of foundational data structures (Stacks, Singly Linked Lists).
   * Low-level multidimensional array transformations and image processing.
-  * Algorithmic application of data structures (RPN parsing, mathematical evaluation, string validation).
-  * Strict adherence to constraints (e.g., no usage of standard library equivalents like `list.pop()`, manual pixel manipulation).
+  * Graph theory applications, shortest path heuristics, and handling NP-hard computational problems (Exact vs. Approximation paradigms).
+  * Strict adherence to constraints (e.g., manual pixel manipulation, custom graph traversal architectures without heavy external framework reliance).
