@@ -29,15 +29,20 @@ This section focuses on low-level image processing and multidimensional array ma
 This section explores graph representations, shortest path lookups, and algorithmic approaches to NP-hard optimization problems.
 * **Graph Representation (`graph.py`)**: Core data structures used to model and navigate custom graph topologies.
 * **Exact TSP Solver (`tsp_exact.py`)**: An implementation of an exact, brute-force/backtracking algorithm designed to find the absolute optimal Hamiltonian cycle for the Traveling Salesperson Problem.
-* **Approximation TSP Solver (`tsp_approx.py`)**: A heuristic approach (such as Nearest Neighbor or local search) implementing an efficient approximation algorithm to solve TSP for larger datasets where exact computation becomes computationally intractable.
+* **Approximation TSP Solver (`tsp_approx.py`)**: A heuristic approach implementing an efficient approximation algorithm to solve TSP for larger datasets where exact computation becomes computationally intractable.
 * **Bidirectional Search (`bidirectional.py`)**: An optimized graph traversal algorithm executing simultaneous forward and backward searches to establish the shortest path between nodes with significantly reduced state-space exploration.
+
+### 📁 [Lab 04](./Lab-04) - Priority Queues, Data Compression & String Metrics
+This section explores tree-based data structures, optimal prefix coding for lossless compression, and dynamic programming for string similarity.
+* **Custom Heap (`heap.py`)**: Implementation of a binary heap data structure, serving as an efficient priority queue.
+* **Huffman Coding (`huffman.py`)**: Implementation of the Huffman compression algorithm. It utilizes the custom heap to build a frequency-based binary tree, generating optimal prefix codes for lossless data compression.
+* **Spell Checker & String Distances (`spell_checker.py`, `distances.py`)**: A spell-checking utility that processes a text dictionary (`words_alpha.txt`) and calculates string metrics (e.g., Edit/Levenshtein distance) to dynamically find and suggest the closest valid word matches for misspelled inputs.
 
 ---
 
 ## Technical Highlights
 * **Language**: Python 3.x
 * **Core Focus**: 
-  * Understanding the underlying mechanics of foundational data structures (Stacks, Singly Linked Lists).
-  * Low-level multidimensional array transformations and image processing.
-  * Graph theory applications, shortest path heuristics, and handling NP-hard computational problems (Exact vs. Approximation paradigms).
-  * Strict adherence to constraints (e.g., manual pixel manipulation, custom graph traversal architectures without heavy external framework reliance).
+  * Understanding the underlying mechanics of foundational data structures (Stacks, Linked Lists, Priority Queues/Heaps, Graphs).
+  * Algorithmic application of data structures (Lossless compression, shortest path heuristics, dynamic programming).
+  * Strict adherence to constraints (e.g., custom heap construction, manual multidimensional array transformations).
